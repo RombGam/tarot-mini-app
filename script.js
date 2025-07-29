@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isTelegram()) {
             try {
                 Telegram.WebApp.sendData(JSON.stringify(data));
-                Telegram.WebApp.close();
+                
                 return true;
             } catch (e) {
                 console.error("Send error:", e);
